@@ -1,0 +1,24 @@
+HTML Tags:
+1. nav
+2. main
+3. h1
+4. h2
+5. p
+6. a
+7. img
+8. ul
+9. li
+10. table
+
+CSS Properties:
+1. background-color
+2. color
+3. font-family
+4. margin
+5. padding
+
+JavaScript:
+JavaScript is used to display interactive alerts when buttons are clicked.
+
+Bootstrap:
+Bootstrap is used for buttons, forms, containers, and responsive styling.

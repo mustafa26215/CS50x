@@ -1,0 +1,11 @@
+sort1 uses: bubble sort
+
+How do you know?: sort1 is much faster when the input is already sorted, which is characteristic of bubble sort.
+
+sort2 uses: merge sort
+
+How do you know?: sort2 is significantly faster than the other sorts on a large input, which is consistent with merge sort's O(n log n) performance.
+
+sort3 uses: selection sort
+
+How do you know?: sort3 takes longer on large inputs and its performance is less dependent on whether the input is sorted, reversed, or random, which is characteristic of selection sort.

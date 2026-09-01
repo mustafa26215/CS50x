@@ -1,0 +1,3 @@
+The listener's audio aura could be described by the average energy, valence, and danceability of their top 100 songs.
+
+However, this may not accurately represent the listener because all songs are treated equally. A better method would consider how often each song was played and how recently it was played.

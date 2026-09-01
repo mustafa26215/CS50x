@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <title>Trivia!</title>
+
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+
+                let buttons = document.querySelectorAll(".answer");
+
+                buttons.forEach(function (button) {
+                    button.addEventListener("click", function () {
+                        let feedback = document.querySelector("#feedback1");
+
+                        if (button.dataset.correct === "true") {
+                            button.style.backgroundColor = "green";
+                            feedback.innerHTML = "Correct!";
+                        } else {
+                            button.style.backgroundColor = "red";
+                            feedback.innerHTML = "Incorrect";
+                        }
+                    });
+                });
+
+                document.querySelector("#check").addEventListener("click", function () {
+                    let input = document.querySelector("#answer");
+                    let feedback = document.querySelector("#feedback2");
+
+                    if (input.value.trim().toLowerCase() === "paris") {
+                        input.style.backgroundColor = "green";
+                        feedback.innerHTML = "Correct!";
+                    } else {
+                        input.style.backgroundColor = "red";
+                        feedback.innerHTML = "Incorrect";
+                    }
+                });
+            });
+        </script>
+    </head>
+
+    <body>
+        <div class="header">
+            <h1>Trivia!</h1>
+        </div>
+
+        <div class="container">
+
+            <div class="section">
+                <h2>Part 1: Multiple Choice</h2>
+                <hr>
+
+                <h3>What is the capital of France?</h3>
+
+                <button class="answer">London</button>
+                <button class="answer" data-correct="true">Paris</button>
+                <button class="answer">Rome</button>
+                <button class="answer">Berlin</button>
+
+                <p id="feedback1"></p>
+            </div>
+
+            <div class="section">
+                <h2>Part 2: Free Response</h2>
+                <hr>
+
+                <h3>What is the capital of France?</h3>
+
+                <input id="answer" type="text">
+                <button id="check">Confirm</button>
+
+                <p id="feedback2"></p>
+            </div>
+
+        </div>
+    </body>
+</html>
